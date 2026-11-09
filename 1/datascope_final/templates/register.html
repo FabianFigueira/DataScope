@@ -1,0 +1,36 @@
+
+{% extends "layout.html" %}
+
+{% block title %}Create account | DataScope{% endblock %}
+
+{% block content %}
+<div class="auth-page">
+    <a href="/" class="brand auth-brand">
+        <span class="brand-icon">D</span> DataScope
+    </a>
+
+    <div class="auth-card">
+        <div class="auth-symbol">D</div>
+        <div class="eyebrow">GET STARTED</div>
+        <h1>Create your account</h1>
+        <p class="auth-subtitle">Your data journey starts here.</p>
+
+        <form action="/register" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" maxlength="30" required autofocus>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" required>
+
+            <label for="confirmation">Confirm password</label>
+            <input type="password" id="confirmation" name="confirmation" placeholder="Repeat your password" required>
+
+            <button type="submit" class="button button-primary auth-submit">Create account <span>→</span></button>
+        </form>
+
+        <p class="auth-switch">Already have an account? <a href="/login">Sign in</a></p>
+    </div>
+
+    <div class="auth-footer">DATA ANALYTICS REDEFINED</div>
+</div>
+{% endblock %}
