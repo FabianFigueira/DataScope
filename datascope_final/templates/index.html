@@ -1,0 +1,153 @@
+
+{% extends "layout.html" %}
+
+{% block title %}DataScope | Business Intelligence{% endblock %}
+
+{% block content %}
+
+<nav class="navbar">
+    <a href="/" class="brand">
+        <span class="brand-icon">D</span>
+        DataScope
+    </a>
+
+    <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="/login" class="nav-login">Log in</a>
+        <a href="/register" class="button button-primary">Get started <span>→</span></a>
+    </div>
+</nav>
+
+<main class="hero" id="about">
+    <div class="hero-content">
+        <div class="eyebrow">
+            <span class="status-dot"></span>
+            INTELLIGENCE FOR YOUR DATA
+        </div>
+
+        <h1>Turn your data into <span class="gradient-text">decisions.</span></h1>
+
+        <p class="hero-description">
+            Upload your datasets, discover hidden patterns and understand
+            your business through powerful analytics and interactive
+            visualizations.
+        </p>
+
+        <div class="hero-actions">
+            <a href="/register" class="button button-primary button-large">
+                Start analyzing <span>→</span>
+            </a>
+            <a href="#features" class="button button-secondary button-large">
+                Explore features
+            </a>
+        </div>
+
+        <div class="hero-trust">
+            <div class="trust-item"><span class="trust-check">✓</span> Simple data import</div>
+            <div class="trust-item"><span class="trust-check">✓</span> Instant insights</div>
+            <div class="trust-item"><span class="trust-check">✓</span> Interactive analytics</div>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="preview-window">
+            <div class="preview-topbar">
+                <div class="window-dots"><i></i><i></i><i></i></div>
+                <span>datascope.app / overview</span>
+                <span class="preview-live">LIVE</span>
+            </div>
+
+            <div class="preview-content">
+                <div class="preview-heading">
+                    <div>
+                        <small>OVERVIEW</small>
+                        <h3>Analytics dashboard</h3>
+                    </div>
+                    <span class="preview-period">Last 30 days</span>
+                </div>
+
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <small>Total records</small>
+                        <strong>24,850</strong>
+                        <span>Dataset volume</span>
+                    </div>
+                    <div class="preview-stat">
+                        <small>Variables</small>
+                        <strong>18</strong>
+                        <span>Data columns</span>
+                    </div>
+                </div>
+
+                <div class="preview-chart">
+                    <div class="chart-heading">
+                        <span>Data distribution</span>
+                        <small>ANALYSIS</small>
+                    </div>
+                    <svg viewBox="0 0 440 150" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#7588ff" stop-opacity=".35"/>
+                                <stop offset="100%" stop-color="#7588ff" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M0 120 C35 115 45 85 85 95 S145 110 180 65 S235 90 270 52 S330 65 365 25 S415 45 440 12 L440 150 L0 150 Z" fill="url(#chartFill)"/>
+                        <path d="M0 120 C35 115 45 85 85 95 S145 110 180 65 S235 90 270 52 S330 65 365 25 S415 45 440 12" fill="none" stroke="#8494ff" stroke-width="3"/>
+                    </svg>
+                </div>
+
+                <div class="preview-bottom">
+                    <span><i></i> Data processed</span>
+                    <span>DataScope Analytics</span>
+                </div>
+            </div>
+        </div>
+        <div class="floating-card floating-one">
+            <span class="floating-icon">↗</span>
+            <div><small>Data insights</small><strong>Real-time analysis</strong></div>
+        </div>
+        <div class="floating-card floating-two">
+            <span class="floating-icon">◈</span>
+            <div><small>Powerful tools</small><strong>Smart analytics</strong></div>
+        </div>
+    </div>
+</main>
+
+<section class="features-section" id="features">
+    <div class="section-heading">
+        <div class="eyebrow">BUILT FOR BETTER DECISIONS</div>
+        <h2>Everything you need to <span class="gradient-text">understand data.</span></h2>
+        <p>Transform raw information into clear, meaningful insights.</p>
+    </div>
+
+    <div class="features-grid">
+        <article class="feature-card">
+            <div class="feature-icon">↥</div>
+            <h3>Easy data import</h3>
+            <p>Upload CSV datasets and let DataScope organize your information.</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon">▤</div>
+            <h3>Statistical analysis</h3>
+            <p>Explore averages, medians, ranges and other statistical indicators.</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon">⌁</div>
+            <h3>Data visualization</h3>
+            <p>Discover patterns and relationships through interactive charts.</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon">◉</div>
+            <h3>Data management</h3>
+            <p>Keep your datasets organized and accessible from your account.</p>
+        </article>
+    </div>
+</section>
+
+<footer class="footer">
+    <a href="/" class="brand"><span class="brand-icon">D</span> DataScope</a>
+    <span>© 2026 DataScope. Built for smarter decisions.</span>
+</footer>
+
+{% endblock %}
